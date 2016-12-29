@@ -1,0 +1,29 @@
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Info</title>
+    <link rel="stylesheet" type="text/css" href="myContact.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(37.3353, -121.8813),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+	<h1>welcome to Mixed Garden</h1>
+	<p>1 Washington Sq, San Jose, CA 95192</p>
+	<p>Phone:(408) 924-1000, 
+	   		 (408) 123-4567
+	</p>
+	<div id="map-canvas"></div>
+</body>
+
+</html>

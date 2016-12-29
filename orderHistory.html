@@ -1,0 +1,105 @@
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+	<link rel="stylesheet"
+          type="text/css"
+          href="myRestaurant4.css" />
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+	<script type="text/javascript"
+            src="myRestaurant.js">
+    </script>
+    </style>
+<script type = "text/javascript">
+	
+function validate(){
+            firstName  = document.getElementById("fn").value;
+            lastName = document.getElementById("ln").value;
+            orderNumber = document.getElementById("order").value;
+            
+            errors = "";
+    
+            if (firstName == "") {
+                errors += "Missing first Name.\n";
+            } 
+			
+            if (firstName == "") {
+                errors += "Missing last Name.\n";
+            } 
+			
+            if (orderNumber == ""){
+                errors += "Missing order number\n";
+            } 
+    
+            if (errors != "") {
+              alert(errors);
+			  return false;
+            }
+			else
+			{
+			   return true;
+			}
+        }
+</script>
+	
+</head>
+<body>
+<div class="loader"></div>
+    <img class = "name" src="images/name.png"/>
+   <div class="sideBar">
+   
+  <div class="homeB"><a href='index.html' ><span>HOME</span></a></div >
+   <div class="orderB"><a href='order.html'><span>ORDER</span></a></div >
+   <div class="menuB"><a href='menu.html'><span>MENU</span></a></div >
+   <div class="contactB"><a href=" " onclick="myFunction()"><span>CONTACT</span></a></div > 
+   <div class="aboutB"><a href="about.html"><span>ABOUT</span></a></div >
+   
+   
+       <img class = "home" src="images/bg1_menu.png"/>
+	   <img class = "order" src="images/bg1_menu.png"/>
+       <img class = "menu" src="images/bg1_menu.png"/>
+       <img class = "contact" src="images/bg1_menu.png"/>		   
+	   <img class = "about" src="images/bg1_menu.png"/>
+	</div> 	
+    
+  <form action="http://localhost/Project/orderHistory.php"
+          method="get" onsubmit='return validate()'>
+
+    <div class = "bg" ></div>
+	<div class = "historyTitle"><h1>Order History</h1></div>
+    <div class = "footer"></div>
+	<img class = "line" src="images/line.png"/>
+
+           <div class="info2">
+            <p>
+                <label>First name:</label>
+                <input name="firstName" type="text" value = "" id = "fn"/>
+            </p>
+            <p>
+                <label>Last name:</label>
+                <input name="lastName" type="text" value = "" id = "ln"/>
+            </p>
+	        <p>
+                <label>Order #:</label>
+				<input name="orderNumber" type="text" value = "" id = "order"//>
+            </p>
+			 	
+		   </div>
+       <div class="find">
+            <p>
+                
+               <input type="image" alt="Submit"  src="images/submit.png" onmouseover="this.src='images/submit1.png'"
+   onmouseout="this.src='images/submit.png'" width="120" height="auto">
+            
+            </p>
+    </div>
+
+</from>
+    
+</body>
+
+</html>
+

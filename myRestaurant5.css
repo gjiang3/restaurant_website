@@ -1,0 +1,714 @@
+html ,body
+{ 
+  background: url(images/bg_pic.jpg);
+  margin: 0;
+}
+
+.name
+{
+	position: absolute;
+	left: 100px;
+    top: 50px;
+    width: 400px;	
+}
+
+.sideBar a {
+    color: rgb(182, 76, 65);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+
+.home{
+   position: absolute;
+   left: 550px;
+   top: 50px;	  
+}
+
+.homeB{
+   position: absolute;
+   left: 592px;
+   top: 105px;
+   z-index:100;   
+}
+
+.order{
+   position: absolute;
+   left: 700px;
+   top: 50px;	  
+}
+
+.orderB{
+   position: absolute;
+   left: 740px;
+   top: 105px;	
+   z-index:100;     
+}
+
+.menu{
+   position: absolute;
+   left: 850px;
+   top: 50px;	  
+}
+
+.menuB{
+   position: absolute;
+   left: 892px;
+   top: 105px;
+   z-index:100;   
+}
+
+.contact{
+   position: absolute;
+   left: 1000px;
+   top: 50px;	  
+}
+
+.contactB{
+   position: absolute;
+   left: 1030px;
+   top: 105px;	
+   z-index:100;    
+}
+
+.about{
+   position: absolute;
+   left: 1150px;
+   top: 50px;	  
+}
+
+.aboutB{
+   position: absolute;
+   left: 1188px;
+   top: 105px;	
+   z-index:100;   
+}
+
+.Appetizers{
+    position: absolute;
+    left: 30px;
+    top: 500px;
+}
+.Salads_Soup{
+    position: absolute;
+    left: 450px;
+    top: 500px;}
+.Entrees{
+    position: absolute;
+    left: 850px;
+    top: 500px;}
+.Desserts{
+    position: absolute;
+    left: 1280px;
+    top: 500px;}
+
+.submit{    position: absolute;
+    left: 50px;
+    top: 820px;
+}
+.orderHistory{
+    position: absolute;
+    left:500px;
+    top:300px;
+}
+
+.orderHistory img{
+    width: 50%;
+    height: auto;
+    
+}
+
+
+
+.info{
+    position: absolute;
+    left: 50px;
+    top: 270;
+    text-align: right;
+}
+	
+fieldset{
+ 
+	background-color: rgba(62, 18, 8, 0.7);
+        border-radius: 8px;
+        position: absolute;
+        top: 150px;
+	left: 350px;
+	width: 1050px;
+	height: 700px;
+	color: rgb(255, 255, 255);
+}
+
+legend {
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.info1{
+    position: absolute;
+    left: 500px;
+    top: 250px;
+    text-align: right;
+}
+	
+form{
+ color: rgb(255, 255, 255);
+}
+
+.submit1{    position: absolute;
+    left: 600px;
+    top: 500px;}
+
+.choice label{
+	font:bold;
+    font-family: Papyrus;
+    font-size: 15px;
+}
+.choice label:hover{
+	color: rgb(241,169,73);
+}
+
+.nav {
+   margin-top: 20px;    
+   height: 40px;
+   background: rgba(62, 18, 8, 0.7);
+}
+
+.nav ul{
+   margin: 0;
+   padding: 0;        
+}
+
+.nav ul li{
+   list-style: none;
+}
+
+.nav ul li a
+{
+    text-decoration: none;
+    float:left;
+    display: block;
+    padding: 10px 40px;
+    color: rgb(251, 191, 155);
+}
+
+.nav ul li a:hover  {
+    color: white;
+}
+
+.headerContent {
+    position: relative;
+
+    top: 150px;
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.headerBreak {
+     position: relative;
+
+    top: 150px;
+    width: 80%;
+    margin: 0 auto;
+    height: 0;
+    border-bottom: 2px solid rgba(62, 18, 8, 0.7);
+}
+
+.content{
+  background-color: rgba(252, 226, 200, 0.7);
+  position: absolute;
+  top: 212px;
+  margin: 0 auto;
+  width: 80%;
+  height: 4300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.images {
+    font-size: 120%;
+}
+
+.images p {
+    text-indent: 40px;
+	text-align: justify;
+	color: rgb(241,169,73);
+}
+
+.images h3 {
+	color: rgb(205,87,99);
+}
+
+.images img{
+    width:  400px;
+    height: 295px;
+    z-index: 120;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.images a{
+    text-decoration: none;
+    color: rgb(155,87,99);
+}
+
+.images a:hover {
+    color: rgb(241,169,73);
+}
+
+.images1 {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+.images1-text{
+    position: absolute;
+    top: 80px;
+    left: 700px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('images/preloader.gif') 50% 50% no-repeat;
+}
+
+.images2 {
+    position: absolute;
+    top: 430px;
+    left: 700px;
+}
+.images2-text{
+    position: absolute;
+    top: 460px;
+    left: 200px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images3 {
+    position: absolute;
+    top: 810px;
+    left: 150px;
+}
+.images3-text{
+    position: absolute;
+    top: 830px;
+    left: 700px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images4 {
+    position: absolute;
+    top: 1190px;
+    left: 700px;
+}
+.images4-text{
+    position: absolute;
+    top: 1220px;
+    left: 200px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images5 {
+    position: absolute;
+    top: 1570px;
+    left: 150px;
+}
+.images5-text{
+    position: absolute;
+    top: 1600px;
+    left: 700px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images6 {
+    position: absolute;
+    top: 1950px;
+    left: 700px;
+}
+.images6-text{
+    position: absolute;
+    top: 1980px;
+    left: 200px;
+    width:  400px;
+    height: 400px;
+ 
+}
+
+.images7 {
+    position: absolute;
+    top: 2330px;
+    left: 150px;
+}
+.images7-text{
+    position: absolute;
+    top: 2360px;
+    left: 700px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images8 {
+    position: absolute;
+    top: 2710px;
+    left: 700px;
+}
+.images8-text{
+    position: absolute;
+    top: 2740px;
+    left: 200px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images9 {
+    position: absolute;
+    top: 3090px;
+    left: 150px;
+}
+.images9-text{
+    position: absolute;
+    top: 3120px;
+    left: 700px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images10 {
+    position: absolute;
+    top: 3470px;
+    left: 700px;
+}
+.images10-text{
+    position: absolute;
+    top: 3500px;
+    left: 200px;
+    width:  400px;
+    height: 400px;
+
+}
+
+.images11{
+    position: absolute;
+    top: 3850px;
+    left: 150px;
+}
+.images11-text{
+    position: absolute;
+    top: 3880px;
+    left: 700px;
+    width:  400px;
+    height: 400px;
+ 
+}
+.bg{
+    background-color: rgba(62, 18, 10, 0.8);
+    position: absolute;
+    top: 250px;
+    margin: 0 auto;
+    width: 100%;
+    height: 650px;
+}
+.info label{
+    font-size: 22px;
+}
+.info input {
+    border: 5px solid  rgb(221, 126, 86); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    height:35px;
+    font-size: 16px;
+    
+}
+.choice h3
+{
+    font-size: 30px;
+    background-color:  rgb(238, 106, 70);
+}
+.choice input
+{
+  border: 5px solid  rgb(221, 126, 86); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    height:30px;
+    
+}
+.footer{
+    background-color: rgba(111, 36, 22, 0.7);
+    position: absolute;
+    top: 900px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    vertical-align: middle;
+}
+.line 
+{
+   position: absolute;
+    top: 250px;
+}
+.menuTitle{
+    position: absolute;
+    top: 430px;
+	left: 50px;
+}
+
+.summary {
+    font-size: 120%;
+    position: absolute;
+    top: 380px;
+	left: 660px;
+	color: rgb(205,87,99);
+}
+
+.orderSummary{
+     font-size: 120%;
+    position: absolute;
+    top: 50%;
+	left: 35%;
+	color: rgb(131,79,58);
+}
+
+.orderSummary th {text-align:left}
+
+.info2{
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    text-align: right;
+}
+.info2 label{
+    font-size: 22px;
+}
+.info2 input {
+    border: 5px solid  rgb(221, 126, 86); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    height:35px;
+    font-size: 16px;
+}
+.submit2 {    position: absolute;
+    left: 760px;
+    top: 550px;
+}
+
+.staff  img{
+      width:150px;
+	  height: auto;
+}
+
+.staff1 {
+    position: absolute;
+    left: 50px;
+    top: 330px;
+}
+
+.staff2 {
+    position: absolute;
+    left: 50px;
+    top: 530px;
+}
+
+.staff3 {
+    position: absolute;
+    left: 50px;
+    top: 730px;
+}
+
+.staff-discretion1{
+    position: absolute;
+    left: 230px;
+    top: 350px;
+	width: 200px;
+	height: 150px;
+}
+
+.staff-discretion2{
+    position: absolute;
+    left: 230px;
+    top: 520px;
+	width: 200px;
+	height: 150px;
+}
+
+.staff-discretion3{
+    position: absolute;
+    left: 230px;
+    top: 720px;
+	width: 200px;
+	height: 150px;
+}
+
+.staff h3 {
+     color: rgb(221, 126, 86); 
+}
+
+.staff p {
+     color: white; 
+}
+
+.t1 {
+    position: absolute;
+    left: 60px;
+    top: 260px;
+	font-size: 120%;
+	
+}
+
+.t1 h3 {
+   color: white !important; 
+}
+
+.history {
+    position: absolute;
+    left: 600px;
+    top: 350px;
+	width: 550px;
+	height: 500px;
+	font-size: 150%;
+
+}
+
+.history h3{
+   color: rgb(221, 126, 86); 
+
+   }
+.history  p{
+    text-indent: 40px;
+	text-align: justify;
+	color: white;
+}
+.info2{
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    text-align: right;
+}
+.info2 label{
+    font-size: 22px;
+}
+.info2 input {
+    border: 5px solid  rgb(221, 126, 86); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    height:35px;
+    font-size: 16px;
+}
+.submit2 {    position: absolute;
+    left: 760px;
+    top: 550px;
+}
+.historyTitle{
+    position: absolute;
+    text-align: center;
+    left:700px;
+    top:270px;
+}
+.info2{
+    position: absolute;
+    left: 600px;
+    top: 370px;
+    text-align: right;
+}
+.info2 label{
+    font-size: 22px;
+}
+.info2 input {
+    border: 5px solid  rgb(221, 126, 86); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    height:35px;
+    font-size: 16px;
+    
+}
+.find{    position: absolute;
+    left: 740px;
+    top: 600px;
+}
+
+
+.news{
+     position: absolute;
+    left: 1300px;
+    top: 320px;
+	width: 400px;
+	height: 500px;
+	font-size: 120%;
+}
+.news h3{
+     color: white;
+}
+
+
+
+.newsText {
+     position: absolute;
+    left: 100px;
+    top: 55px;
+}
+
+
+.newsText h4{
+    color: rgb(221, 126, 86);
+}
+
+.newsText p{
+    color: rgb(205,87,99);
+}
+
+
+.day1 {
+     position: absolute;
+    left: 0px;
+    top: 80px;
+	
+}
+
+.day2 {
+     position: absolute;
+    left: 0px;
+    top: 250px;
+	
+}
+
+.newsText1 {
+     position: absolute;
+    left: 100px;
+    top: 230px;
+}
+
+.newsText1 h4{
+    color: rgb(221, 126, 86);
+}
+
+.newsText1 p{
+    color: rgb(205,87,99);
+}

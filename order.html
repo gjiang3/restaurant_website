@@ -1,0 +1,238 @@
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Elastic Stack - Elastic dragging interaction" />
+		<meta name="keywords" content="elastic thumnails, draggabilly, navigate, touch, " />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+    <title>Order</title>
+	<link rel="stylesheet"
+          type="text/css"
+          href="myRestaurant5.css" />
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+	<script type="text/javascript"
+            src="myRestaurant.js">
+    </script>
+    
+	
+   <script>
+   function myFunction() {
+      window.open("contact.html", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=300, left=500, width=400, height=400");
+     }
+    </script>
+	
+<script type = "text/javascript">
+
+function validate(){
+            firstName  = document.getElementById("fn").value;
+            lastName = document.getElementById("ln").value;
+            phoneNumber = document.getElementById("phone").value;
+            
+            errors = "";
+    
+            if (firstName == "") {
+                errors += "Missing first Name.\n";
+            } 
+			
+            if (lastName == "") {
+                errors += "Missing last Name.\n";
+            } 
+			
+            phoneRE = /^\(\d{3}\) *\d{3}-\d{4}$/;
+            if (!phoneNumber.match(phoneRE)){
+                errors += "Invalid phone number. " +
+                          "Example: (999) 999-9999\n";
+            } 
+    
+            if (errors != "") {
+              alert(errors);
+			  return false;
+            }
+			else
+			{
+			   return true;
+			}
+        }
+</script>
+	
+</head>
+<body>
+<div class="loader"></div>
+    <img class = "name" src="images/name.png"/>
+   <div class="sideBar">
+   
+  <div class="homeB"><a href='index.html' ><span>HOME</span></a></div >
+   <div class="orderB"><a href='order.html'><span>ORDER</span></a></div >
+   <div class="menuB"><a href='menu.html'><span>MENU</span></a></div >
+   <div class="contactB"><a href=" " onclick="myFunction()"><span>CONTACT</span></a></div > 
+   <div class="aboutB"><a href="about.html"><span>ABOUT</span></a></div >
+   
+   
+       <img class = "home" src="images/bg1_menu.png"/>
+	   <img class = "order" src="images/bg1_menu.png"/>
+       <img class = "menu" src="images/bg1_menu.png"/>
+       <img class = "contact" src="images/bg1_menu.png"/>		   
+	   <img class = "about" src="images/bg1_menu.png"/>
+	</div> 	
+	
+	<div class="container">
+			
+			<ul id="elasticstack" class="elasticstack">
+				<li><img src="img/1.jpg" alt="01"/><h5>1. Sesame Seared Ahi Tuna</h5></li>
+				<li><img src="img/2.jpg" alt="02"/><h5>2. Bacon Wrapped Scallops</h5></li>
+				<li><img src="img/3.jpg" alt="03"/><h5>3. Jumbo Shrimp Cocktail</h5></li>
+				<li><img src="img/4.jpg" alt="04"/><h5>4. Iceberg Lettuce Wedge</h5></li>
+				<li><img src="img/5.jpg" alt="05"/><h5>5. Mixed Green Salad</h5></li>
+				<li><img src="img/6.jpg" alt="06"/><h5>6. Classic Caesar Salad</h5></li>
+				<li><img src="img/7.jpg" alt="07"/><h5>7. Filet Mignon</h5></li>
+				<li><img src="img/8.jpg" alt="08"/><h5>8.Prime Bone-In Rib-Eye Steak</h5></li>
+				<li><img src="img/9.jpg" alt="09"/><h5>9. Double Cut Lamb Rib Chops</h5></li>
+				<li><img src="img/10.jpg" alt="10"/><h5>10. Prime New York Strip</h5></li>
+				<li><img src="img/11.jpg" alt="11"/><h5>11. Flourless Chocolate Cake</h5></li>
+			</ul>
+		</div><!-- /container -->
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/elastiStack.js"></script>
+		<script>
+			new ElastiStack( document.getElementById( 'elasticstack' ) );
+		</script>
+    
+    
+    <form action="http://localhost/Project/queryDB.php"
+          method="get" onsubmit='return validate()'>
+
+    
+    <div class = "bg" ></div>
+	<div class = "menuTitle"><h1>Menu</h1></div>
+    <div class = "footer"></div>
+	<img class = "line" src="images/line.png"/>
+      <div class="info">
+      <p>
+        <label>First Name: </label>
+        <input name = "firstName" type = "text" value = "" id = "fn" />
+      </p>
+
+      <p>
+        <label>Last Name:</label>
+        <input name="lastName" type= "text" value = "" id = "ln"/>
+      </p>
+	  
+	  <p>
+        <label>Phone Number:</label>
+        <input name="phoneNumber" 
+		       type= "text" 
+		       value = "(999) 999-9999"
+			   id = "phone"/>
+      </p>
+     </div>
+        
+            
+     <div class = "choice">
+     <div class = "Appetizers">
+      <h3>Appetizers</h3>
+            <p>
+        <label>1. Sesame Seared Ahi Tuna ...... $ 8.95 </label>
+                <input name="course1" type="checkbox"/>
+        Qty: <input name="Qty1" type="text" size="5"/>
+            </p>
+            <p>
+        <label>2. Bacon Wrapped Scallops ...... $10.95 </label>
+                <input name="course2" type="checkbox" />
+        Qty: <input name="Qty2" type="text" size="5"/>
+            </p>
+      <p>
+        <label>3. Jumbo Shrimp Cocktail ........... $12.95 </label>
+                <input name="course3" type="checkbox" />
+        Qty: <input name="Qty3" type="text" size="5"/>
+            </p>
+      </div>
+	  <div class = "Salads_Soup">
+      <h3>Salads & Soup</h3>
+            <p>
+        <label>4. Iceberg Lettuce Wedge ...... $ 9.95 </label>
+                <input name="course4" type="checkbox" />
+        Qty: <input name="Qty4" type="text" size="5"/>
+            </p>
+            <p>
+        <label>5. Mixed Green Salad ........... $11.95 </label>
+                <input name="course5" type="checkbox" />
+        Qty: <input name="Qty5" type="text" size="5"/>
+            </p>
+      <p>
+        <label>6. Classic Caesar Salad ....... $12.95 </label>
+                <input name="course6" type="checkbox" />
+        Qty: <input name="Qty6" type="text" size="5"/>
+            </p>
+      </div>
+	  <div class="Entrees">
+       <h3>Main Entrees</h3>
+            <p>
+        <label>7. Filet Mignon ...................................... $19.95 </label>
+                <input name="course7" type="checkbox" />
+        Qty: <input name="Qty7" type="text" size="5"/>
+            </p>
+            <p>
+        <label>8.Prime Bone-In Rib-Eye Steak ...$21.95 </label>
+                <input name="course8" type="checkbox" />
+        Qty: <input name="Qty8" type="text" size="5"/>
+            </p>
+      <p>
+        <label>9. Double Cut Lamb Rib Chops .. $23.95 </label>
+                <input name="course9" type="checkbox" />
+        Qty: <input name="Qty9" type="text" size="5"/>
+            </p>
+      <p>
+        <label>10. Prime New York Strip ................ $24.95 </label>
+                <input name="course10" type="checkbox" />
+        Qty: <input name="Qty10" type="text" size="5"/>
+            </p>
+      </div> 
+      <div class="Desserts">	  
+      <h3>Desserts</h3>
+            <p>
+        <label>11. Flourless Chocolate Cake ......... $ 7.95 </label>
+                <input name="course11" type="checkbox" />
+        Qty: <input name="Qty11" type="text" size="5"/>
+            </p>
+            <p>
+        <label>12. Big Chocolate Layer Cake ....... $ 8.95 </label>
+                <input name="course12" type="checkbox" />
+        Qty: <input name="Qty12" type="text" size="5"/>
+            </p>
+      <p>
+        <label>13. New York Style Cheesecake .. $11.95 </label>
+                <input name="course13" type="checkbox" />
+        Qty: <input name="Qty13" type="text" size="5"/>
+            </p>
+      </div>
+      </div>
+        <div class = "orderHistory"> 
+            <a href="orderHistory.html" class="button"><img src="images/orderHistory.png" 
+   onmouseover="this.src='images/orderHistory2.png'"
+   onmouseout="this.src='images/orderHistory.png'"></a>
+        </div>  
+	  <div class="submit">
+            <p>
+                
+               <input type="image" alt="Submit"  src="images/submit.png" onmouseover="this.src='images/submit1.png'"
+   onmouseout="this.src='images/submit.png'" width="120" height="auto">
+            
+            </p>
+		</div>	
+      
+       
+    </form>
+    
+</body>
+
+</html>
+

@@ -1,0 +1,18 @@
+body
+{
+	text-align: center;
+	background-color: rgb(116, 42, 20);
+	color: rgb(251, 191, 155);
+}
+h1
+{
+	text-transform: capitalize;
+}
+p {
+    text-transform: capitalize;;
+}
+#map-canvas {
+        width: 380px;
+        height: 200px;
+        text-align: center;
+      }

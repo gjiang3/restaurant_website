@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en-US"> 
+
+<head>
+    <meta charset="UTF-8" />
+	<script type="text/javascript"
+            src="../jquery.js">
+    </script>
+	<link rel="stylesheet"
+          type="text/css"
+          href="../jquery-ui-1.11.4.custom/jquery-ui.css" />
+		  
+    <script type="text/javascript"
+            src="../jquery-ui-1.11.4.custom/jquery-ui.js">
+    </script>
+	
+	<script type="text/javascript"
+            src="../myRestaurant.js">
+    </script>
+    <link rel="stylesheet"
+          type="text/css"
+          href="../myRestaurant3.css" />
+
+	<script type="text/javascript" 
+            src="../tools.js">
+    </script>
+	
+	<script type="text/javascript" 
+            src="../comments.js">
+    </script>
+	<script type="text/javascript">
+	    function myFunction() {
+      window.open("../contact.html", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=300, left=500, width=400, height=400");
+     }
+    </script>
+
+	<title>Menu</title>
+</head>
+
+<body >
+<div class="loader"></div>
+<img class = "name" src="../images/name.png"/>
+<div class="header">
+<div class="headerContent">
+<div class="nav">
+    <ul>
+	    <li><a href="../index.html">Home</a></li>
+		<li><a href="../order.html">Order</a></li>
+		<li><a href="../menu.html">Menu</a></li>
+		<li><a href="#" onclick="myFunction()">Contact</a></li>
+		<li><a href="../about.html">About us</a></li>
+	</ul>
+</div>
+</div>
+    <div class="headerBreak"></div>
+ 
+</div>>
+    
+<div class="content">
+<a href="menu.html" class="button"><img src="../images/back-button.png" 
+   onmouseover="this.src='../images/back-button2.png'"
+   onmouseout="this.src='../images/back-button.png'"></a>
+<div class ="image">
+   <img src = "../images/2.jpg">
+   <div class="image_text">
+   <h3>Bacon Wrapped Scallops</h3>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.</p>
+   <h1>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</h1>
+   <h3>PRAESENT JUSTO DOLOR, LOBORTIS QUIS.</h3>
+   <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+ </div>
+ </div>
+ 
+ 
+ 
+ <div class="comment">
+ <h3>Leave a comment</h3>
+     <form action="">
+	      <P><input name = "name" type = "text" value = "Your name" id = "name" /><P>
+	     <p><textarea id="textArea" rows="10" cols="50"></textarea></p>
+		 <P>
+        <input type=button value="SUMBIT COMMENT" onclick=nodeAction() />
+		</P>
+    </form>
+	<hr />
+    <div id="root"> </div>
+</div>  
+ </div>
+</div>
+</body>
+</html>
